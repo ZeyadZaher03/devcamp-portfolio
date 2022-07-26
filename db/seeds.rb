@@ -4,7 +4,7 @@
   )
 end
 
-puts "3 topics created"
+puts "3 Topics created"
 
 10.times do |blog|
   Blog.create!(
@@ -14,7 +14,7 @@ puts "3 topics created"
   )
 end
 
-puts "10 blog posts created"
+puts "10 Blog posts created"
 
 5.times do |skill|
   Skill.create!(
@@ -23,7 +23,7 @@ puts "10 blog posts created"
   )
 end
 
-puts "5 skills created"
+puts "5 Skills created"
 
 8.times do |portfolio_item|
   Portfolio.create!(
@@ -45,4 +45,12 @@ end
   )
 end
 
-puts "9 portfolio items created"
+puts "9 Portfolio items created"
+
+3.times do |technology|
+  Portfolio.last.technologies.create!(
+    name: "Technology #{technology}",
+  )
+end
+
+puts "3 Technologies created"
