@@ -19,8 +19,6 @@
 
     <%= render "shared/nav", location: "bottom" %>
 
-    <% if session[:source] %>
-      <p>Thanks for visting me form <%=  session[:source]%></p>
-    <% end %>
+    <%= source_helper("application") %>
   </body>
 </html>
